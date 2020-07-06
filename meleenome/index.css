@@ -1,0 +1,15 @@
+#frameData {
+    min-height: 500px;
+    margin: auto;
+    padding: 15px 5px 5px 10px;
+    text-align: center;
+    font-size: 32px;
+}
+
+#frameData img {
+    min-height: 450px;
+}
+
+#buttons {
+    text-align: center;
+}

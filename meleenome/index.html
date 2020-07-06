@@ -9,17 +9,23 @@
     <audio id="jump" src="./sounds/short.wav" preload="auto"></audio>
     <audio id="shield" src="./sounds/shield.wav" preload="auto"></audio>
 
+    <h1 id="header">Melee Metronome</h1>
     <div id="frameData">
         test content
     </div> 
     
     <div id="buttons">
-        <button onclick="startNome(1)">100% speed</button>
-        <button onclick="startNome(.5)">50% speed</button>
-        <button onclick="startNome(.25)">25% speed</button>
-        <button onclick="startNome(.10)">10% speed</button>
-        <button onclick="startNome(.05)">05% speed</button>
-        <button onclick="startNome('stop')">STOP</button>
+        <input type="text" value="1" id="pbSpeed">
+        <div id="patterns">
+            <button onclick="startNome(0)">multishine</button>
+            <button onclick="startNome(1)">waveshine</button>
+            <button onclick="startNome('stop')">STOP</button>
+        </div>
+    </div>
+    <div id="info">
+        <p>
+            Information for Falco's framedata/hitboxes/etc can be found <a href="https://smashboards.com/threads/falco-hitboxes-and-frame-data.300397/">here</a>
+        </p>
     </div>
     
     <script src="./meleenome.js" type="text/javascript"></script>
